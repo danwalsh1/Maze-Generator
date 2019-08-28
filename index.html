@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maze Generator</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+		<script src="sketch.js"></script>
+	</head>
+	<body>
+		<h2><u>Maze Generator</u></h2>
+		<p>This version of the maze generator uses a depth first search algorithm implemented with backtracking. For more information about this implementation click <a href="https://en.wikipedia.org/wiki/Maze_generation_algorithm#Recursive_backtracker" target="_blank">HERE</a>.</p>
+		<hr />
+		<p><b>Please fill out all fields in the form below and then press "Draw Maze"!<br />
+		Ensure you choose your line colour so that you can see the crosshair in the coloured box.</b></p>
+		<table>
+			<tr>
+				<td style="text-align:right; padding-right:10px;">
+					Number of columns:
+				</td>
+				<td>
+					<div id="colsContainer"></div>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align:right; padding-right:10px;">
+					Number of rows:
+				</td>
+				<td>
+					<div id="rowsContainer"></div>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align:right; padding-right:10px;">
+					Background colour:
+				</td>
+				<td>
+					<div id="bgColourContainer"></div>
+				</td>
+				<td rowspan="2">
+					<div id="canvasContainer"></div>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align:right; padding-right:10px;">
+					Line colour:
+				</td>
+				<td>
+					<div id="lineColourContainer"></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align:center; padding-top:10px;">
+					<div id="buttonContainer"></div>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
